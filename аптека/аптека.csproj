@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7132ECF1-FC19-4A59-8F1B-444CDDF95E09}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>аптека</RootNamespace>
+    <AssemblyName>аптека</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=5.15.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\FontAwesome.Sharp.5.15.3\lib\netcoreapp3.1\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework">
+      <HintPath>..\..\курсач\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>..\..\курсач\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts">
+      <HintPath>..\..\курсач\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.DebuggerVisualizers, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=8.0.20.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\коннектор\v4.5.2\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DLControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DLControl.Designer.cs">
+      <DependentUpon>DLControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DPControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DPControl.Designer.cs">
+      <DependentUpon>DPControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DPOControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DPOControl.Designer.cs">
+      <DependentUpon>DPOControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DPRControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DPRControl.Designer.cs">
+      <DependentUpon>DPRControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DSControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DSControl.Designer.cs">
+      <DependentUpon>DSControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registrations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registrations.Designer.cs">
+      <DependentUpon>Registrations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainControlClass.cs" />
+    <Compile Include="MControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MControl.Designer.cs">
+      <DependentUpon>MControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PControl.Designer.cs">
+      <DependentUpon>PControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="POControl.Designer.cs">
+      <DependentUpon>POControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PRControl.Designer.cs">
+      <DependentUpon>PRControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="LControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LControl.Designer.cs">
+      <DependentUpon>LControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RLControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RLControl.Designer.cs">
+      <DependentUpon>RLControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RPControl.Designer.cs">
+      <DependentUpon>RPControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPOControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RPOControl.Designer.cs">
+      <DependentUpon>RPOControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPRControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RPRControl.Designer.cs">
+      <DependentUpon>RPRControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RSControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RSControl.Designer.cs">
+      <DependentUpon>RSControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SControl.Designer.cs">
+      <DependentUpon>SControl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DLControl.resx">
+      <DependentUpon>DLControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DPControl.resx">
+      <DependentUpon>DPControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DPOControl.resx">
+      <DependentUpon>DPOControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DPRControl.resx">
+      <DependentUpon>DPRControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DSControl.resx">
+      <DependentUpon>DSControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registrations.resx">
+      <DependentUpon>Registrations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MControl.resx">
+      <DependentUpon>MControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PControl.resx">
+      <DependentUpon>PControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POControl.resx">
+      <DependentUpon>POControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRControl.resx">
+      <DependentUpon>PRControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="LControl.resx">
+      <DependentUpon>LControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RLControl.resx">
+      <DependentUpon>RLControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPControl.resx">
+      <DependentUpon>RPControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPOControl.resx">
+      <DependentUpon>RPOControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPRControl.resx">
+      <DependentUpon>RPRControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RSControl.resx">
+      <DependentUpon>RSControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SControl.resx">
+      <DependentUpon>SControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FontAwesome.Sharp.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
